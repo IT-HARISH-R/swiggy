@@ -4,18 +4,26 @@
     margin: 0%;
 }
 
+body {
+    width: 100%;
+    z-index: 1;
+}
+
 .head-top {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: #ffffff;
     box-shadow: 0px .9px 10px -5px;
+    position: fixed;
+    z-index: 1;
 }
 
 .head-left {
     display: flex;
     align-items: center;
+    width: 10%;
 }
 
 .head-left img {
@@ -35,10 +43,12 @@
     align-items: center;
     position: absolute;
     right: 0px;
+    width: 65%;
     height: 100%;
 }
 
 .head-right span {
+    width: 20%;
     display: flex;
     position: relative;
     align-items: center;
@@ -76,6 +86,7 @@
 }
 
 .main-dish {
+    width: 100%;
     margin-top: 14px;
     margin-bottom: 30px;
 }
@@ -103,13 +114,10 @@
 
 .dish-detial {
     margin-top: 15px;
-}
-
-.dish-detial img {
-    width: 280px;
-    height: 180px;
-    border-radius: 20px;
-
+    margin-bottom: 40px;
+    display: flex;
+    gap: 35px;
+    overflow-x: hidden;
 }
 
 .dish-detial h5 {
@@ -117,6 +125,49 @@
     margin-top: 15px;
     font-weight: 600;
     margin-bottom: 0px;
+}
+
+.detial-hotel p {
+    margin-left: 15px;
+    margin-top: 3px;
+    font-weight: 400;
+    color: gray;
+    font-size: 18px;
+    width: 265px;
+}
+
+.img-color-div {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rate {
+    position: relative;
+    bottom: 35px;
+    text-transform: uppercase;
+    left: 20px;
+    font-weight: 800;
+    color: #fff;
+    font-size: 24px;
+}
+
+.color-img-div {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    border-radius: 16px;
+}
+
+.img-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    opacity: .3;
 }
 
 .green-star {
@@ -128,6 +179,457 @@
     padding: 3px;
     margin-top: 0px;
 }
-.radeing{
-    padding-top: px;
+
+.main-hotel h4 {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+/*--------------------------------offer list------------*/
+.offer-list {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.offer-items {
+    margin-top: 20px;
+    border-radius: 999px;
+    border: .1px solid gray;
+}
+
+.offer-items p {
+    margin: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*-----------------------------------------*/
+.main-hotel-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.color-img-div-2 {
+    width: 200px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.rate-2 {
+    position: relative;
+    bottom: 35px;
+    text-transform: uppercase;
+    left: 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18.5px;
+}
+
+.dish-detial-2 {
+    width: 22%;
+    margin-top: 15px;
+    display: flex;
+    margin-left: 25px;
+}
+
+.img-color-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    background: linear-gradient(rgb(215, 215, 215), rgb(0, 0, 0));
+    opacity: .4;
+}
+
+.dish-detial-2 h5 {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.img-color-div-2 {
+    position: relative;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.img-color-div-2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+}
+
+.detial-hotel-2 p {
+    margin-left: 15px;
+    margin-top: 3px;
+    font-weight: 400;
+    color: gray;
+    font-size: 15px;
+    width: 180px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.near-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.near-me {
+    width: 21%;
+    height: 50px;
+    border: 1.5px solid rgba(2, 6, 12, 0.1);
+    border-radius: 10px;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+
+.near-out-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.near-out-line p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main-box-2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.in-box {
+    width: 48%;
+    height: 50px;
+    border: 1.5px solid rgba(2, 6, 12, 0.1);
+    border-radius: 10px;
+    margin-right: 4%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-box p {
+    margin-bottom: 0;
+}
+
+.app {
+    margin-top: 100px;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f5;
+}
+
+.play {
+    width: 75.5%;
+    display: flex;
+}
+
+.swiggy {
+    width: 50%;
+}
+
+.swiggy p {
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(61 64 70);
+}
+
+.play-store {
+    position: relative;
+    top: 20px;
+    width: 50%;
+    display: flex;
+}
+
+.app-store img {
+    width: 90%;
+}
+
+/*-------------------------------------------------------*/
+.last-main-div {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #02060c;
+    padding-bottom: 100px;
+}
+
+.condante {
+    width: 75.5%;
+    display: flex;
+}
+
+.col1 {
+    position: relative;
+    bottom: 190px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.col2 p,
+.col3 p,
+.col4 p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.col1 img {
+    width: 40px;
+}
+
+.col2 {
+    width: 25%;
+}
+
+.col3 {
+    width: 25%;
+}
+
+.col4 {
+    width: 25%;
+}
+
+
+
+
+
+
+/*----------------------------------------*/
+@media (max-width:320px) {
+    .salem{
+        margin-top: 10px;
+    }
+    .sal-h4{
+        font-size: 1px;
+    }
+    .dish-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img-list {
+        width: 55px;
+        height: 55px;
+        margin-right: 0px;
+    }
+    /*---------------------------------*/
+    .head-top {
+        position: relative;
+        display: flex;
+        width: 100vw;
+        height: 30px;
+    }
+    
+    .head-left {
+        display: flex;
+        align-items: center;
+        width: 10%;
+    }
+    
+    .head-left img {
+        position: relative;
+        right: 27px;
+        width: 20px;
+        height: 20px;
+        margin: 5px 30px;
+    } 
+    .head-left p {
+        position: relative;
+        right: 50px;
+        bottom: 1.5px;
+        font-size: 8px;
+        border-bottom: 1.5px solid;
+    } 
+    .head-right {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 18px;
+        width: 65%;
+        height: 100%;
+    }
+    
+    .head-right span {
+        font-size: 4px;
+        width: 40px;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }  
+    .head-icon {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-weight: 450;
+    }
+    svg{
+        width: 6px;
+        height: 6px;
+        padding-right: 2px;
+    }
+    /*-----------------------------------------/*
+    
+    
+    /*-----------------------------*/
+    .salem h4{
+        font-size: 20px;
+    }
+    .dish-detial { 
+        gap: 30px;
+    }
+    .detial-hotel p {
+        font-size: 15px;
+        width: 205px;
+    }
+    .rate {
+        left: 15px;
+        font-size: 19px;
+    }
+    .img-color-div {
+        width: 220px;
+        height: 140px;
+    }
+    .color-img-div {
+        width: 220px;
+        height: 140px;
+    }
+    /*-------------------------------------------*/
+    .main-hotel h4 {
+        font-size: 20px;
+    }
+
+    .offer-items p {
+        font-size: 9px;
+    }
+
+    /*-------------main list dise----------------------*/
+    .img-color-div-2 {
+        width: 1px;
+        height: 1px;
+    }
+    .color-img-div-2 {
+        width: 1px;
+        height: 1px;
+    }
+    .rate-2 {
+        bottom: 35px;
+        left: 15px;
+        font-size: 18.5px;
+    }
+
+    .dish-detial-2 {
+        width: 21%;
+        margin-left: 0px;
+        margin-right: 25px;
+        display: n;
+    }
+
+    .dish-detial-2 h5 {
+        font-size: 14px;
+    }
+
+    .detial-hotel-2 p {
+        font-size: 13px;
+        width: 180px;
+    }
+
+    .radeing {
+        font-size: 13px;
+    }
+
+    /*------------------------------------end-------------------------*/
+}
+
+
+
+
+@media (max-width:1024px) {
+    
+    .near-in-line p{
+        font-size: 11px;
+    }
+    /*-----------------------------*/
+    .salem h4{
+        font-size: 20px;
+    }
+    .dish-detial { 
+        gap: 30px;
+    }
+    .detial-hotel p {
+        font-size: 15px;
+        width: 205px;
+    }
+    .rate {
+        left: 15px;
+        font-size: 19px;
+    }
+    .img-color-div {
+        width: 220px;
+        height: 140px;
+    }
+    .color-img-div {
+        width: 220px;
+        height: 140px;
+    }
+    /*-------------------------------------------*/
+    .main-hotel h4 {
+        font-size: 20px;
+    }
+
+    .offer-items p {
+        font-size: 10px;
+    }
+
+    /*-------------main list dise----------------------*/
+    .img-color-div-2 {
+        width: 165px;
+        height: 105px;
+    }
+    .color-img-div-2 {
+        width: 165px;
+        height: 105px;
+    }
+    .rate-2 {
+        bottom: 35px;
+        left: 15px;
+        font-size: 18.5px;
+    }
+
+    .dish-detial-2 {
+        width: 21%;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+
+    .dish-detial-2 h5 {
+        font-size: 14px;
+    }
+
+    .detial-hotel-2 p {
+        font-size: 13px;
+        width: 180px;
+    }
+
+    .radeing {
+        font-size: 13px;
+    }
+
+    /*------------------------------------end-------------------------*/
 }
