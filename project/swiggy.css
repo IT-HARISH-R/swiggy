@@ -7,6 +7,7 @@
 body {
     width: 100%;
     z-index: 1;
+    margin-top: 20px;
 }
 
 .head-top {
@@ -27,8 +28,8 @@ body {
 }
 
 .head-left img {
-    width: 50px;
-    height: 60px;
+    width: 80px;
+    height: 50px;
     margin: 5px 30px;
 }
 
@@ -38,6 +39,7 @@ body {
     font-weight: 900;
 }
 
+/*-------------------------------------------------------------------*/
 .head-right {
     display: flex;
     align-items: center;
@@ -45,18 +47,25 @@ body {
     right: 0px;
     width: 65%;
     height: 100%;
+    padding-left: 55px;
+    padding-right: 5px;
+    justify-content: space-around;
 }
 
-.head-right span {
-    width: 20%;
+.head-right div {
     display: flex;
     position: relative;
     align-items: center;
+    gap: 5px;
+}
+
+.head-right-icone svg,
+.head-icon {
+    position: relative;
+    left: 20%;
 }
 
 .head-icon {
-    padding-left: 5px;
-    padding-right: 55px;
     font-weight: 450;
 }
 
@@ -66,13 +75,17 @@ body {
     stroke: #282c3f;
 }
 
+.head-right-icone svg {
+    width: 20px;
+    height: 20px;
+}
+
 .head-right-icone:hover {
     color: red;
 
 }
 
-/*------------------------------main-------------------------------*/
-
+/*----------------------------main---------------------------------------------*/
 .main-div {
     width: 100%;
     display: flex;
@@ -88,7 +101,7 @@ body {
 .main-dish {
     width: 100%;
     margin-top: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .main-dish h4 {
@@ -104,12 +117,14 @@ body {
 }
 
 .img-list {
-    width: 145px;
+    width: 13.5%;
     margin-right: 20px;
 }
 
+/*-----------------------------Restaurants-------------------------------------*/
+
 .salem {
-    margin-top: 40px;
+    margin-top: -40px;
 }
 
 .dish-detial {
@@ -187,6 +202,8 @@ body {
 
 /*--------------------------------offer list------------*/
 .offer-list {
+    position: relative;
+    top: 120px;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -205,8 +222,10 @@ body {
     font-weight: 500;
 }
 
-/*-----------------------------------------*/
+/*----------------------------------------------------*/
 .main-hotel-2 {
+    position: relative;
+    top: 120px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -248,6 +267,7 @@ body {
 
 .dish-detial-2 h5 {
     margin-left: 15px;
+    font-size: 19px;
     margin-top: 10px;
     font-weight: 600;
     margin-bottom: 0px;
@@ -265,7 +285,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 16px;
-
 }
 
 .detial-hotel-2 p {
@@ -277,7 +296,17 @@ body {
     width: 180px;
 }
 
-/*--------------------------------------------------------------------------*/
+.green-star-2 {
+    margin-left: 15px;
+    background-color: green;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+/*---------------------------------------------*/
 
 .near-main {
     display: flex;
@@ -306,7 +335,7 @@ body {
 }
 
 .main-box-2 {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -327,18 +356,14 @@ body {
     margin-bottom: 0;
 }
 
-.app {
-    margin-top: 100px;
-    padding-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f5;
-}
+/*-------------------------------------------*/
 
 .play {
-    width: 75.5%;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
     display: flex;
+    background-color: #f0f0f5;
 }
 
 .swiggy {
@@ -346,6 +371,7 @@ body {
 }
 
 .swiggy p {
+    width: 80%;
     font-weight: 800;
     font-size: 30px;
     color: rgb(61 64 70);
@@ -362,25 +388,25 @@ body {
     width: 90%;
 }
 
-/*-------------------------------------------------------*/
+/*-----------------------------------------*/
 .last-main-div {
     padding-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: #02060c;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 .condante {
-    width: 75.5%;
+    width: 90%;
     display: flex;
 }
 
 .col1 {
     position: relative;
     bottom: 190px;
-    width: 25%;
+    width: 20%;
     display: flex;
     align-items: center;
 }
@@ -388,23 +414,27 @@ body {
 .col2 p,
 .col3 p,
 .col4 p {
+    padding-top: 10px;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .col1 img {
     width: 40px;
 }
-
-.col2 {
-    width: 25%;
+.col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+    color: #ffffff; 
+    font-weight: 800; 
+    font-size: 20px;
 }
-
+.col2 {
+    width: 20%;
+}
 .col3 {
-    width: 25%;
+    width: 20%;
 }
 
 .col4 {
-    width: 25%;
+    width: 20%;
 }
 
 
@@ -412,224 +442,1276 @@ body {
 
 
 
-/*----------------------------------------*/
-@media (max-width:320px) {
-    .salem{
-        margin-top: 10px;
-    }
-    .sal-h4{
-        font-size: 1px;
-    }
-    .dish-list {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .img-list {
-        width: 55px;
-        height: 55px;
-        margin-right: 0px;
-    }
-    /*---------------------------------*/
-    .head-top {
-        position: relative;
-        display: flex;
-        width: 100vw;
-        height: 30px;
-    }
-    
-    .head-left {
-        display: flex;
-        align-items: center;
-        width: 10%;
-    }
-    
-    .head-left img {
-        position: relative;
-        right: 27px;
-        width: 20px;
-        height: 20px;
-        margin: 5px 30px;
-    } 
-    .head-left p {
-        position: relative;
-        right: 50px;
-        bottom: 1.5px;
-        font-size: 8px;
-        border-bottom: 1.5px solid;
-    } 
-    .head-right {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        right: 18px;
-        width: 65%;
-        height: 100%;
-    }
-    
-    .head-right span {
-        font-size: 4px;
-        width: 40px;
-        display: flex;
-        position: relative;
-        align-items: center;
-    }  
-    .head-icon {
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        font-weight: 450;
-    }
-    svg{
-        width: 6px;
-        height: 6px;
-        padding-right: 2px;
-    }
-    /*-----------------------------------------/*
-    
-    
-    /*-----------------------------*/
-    .salem h4{
-        font-size: 20px;
-    }
-    .dish-detial { 
-        gap: 30px;
-    }
-    .detial-hotel p {
-        font-size: 15px;
-        width: 205px;
-    }
-    .rate {
-        left: 15px;
-        font-size: 19px;
-    }
-    .img-color-div {
-        width: 220px;
-        height: 140px;
-    }
-    .color-img-div {
-        width: 220px;
-        height: 140px;
-    }
-    /*-------------------------------------------*/
-    .main-hotel h4 {
-        font-size: 20px;
+
+
+
+
+/*-------------------------------------------------display size----------------------------------*/
+@media (max-width:2565px) {
+    .col2 p, .col3 p, .col4 p {
+        font-size: 30px;
     }
 
-    .offer-items p {
-        font-size: 9px;
+    .col1 img {
+        width: 70px;
+        margin-right: 5px;
+    }
+    .col1 {
+      position: relative;
+      top: -180px;
+      margin-right: 10px;
+    }
+    .col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+        font-size: 35px;
+    }
+    /*--------------------------------------------*/
+    .swiggy p {
+        font-size: 50px;
     }
 
-    /*-------------main list dise----------------------*/
-    .img-color-div-2 {
-        width: 1px;
-        height: 1px;
+    .play-store {
+        position: relative;
+        top: 20px;
+        width: 50%;
     }
+
+    /*---------------------*/
+    .main-hotel-2 {
+        justify-content: space-between;
+        top: 120px;
+        margin-bottom: 50px;
+    }
+
     .color-img-div-2 {
-        width: 1px;
-        height: 1px;
-    }
-    .rate-2 {
-        bottom: 35px;
-        left: 15px;
-        font-size: 18.5px;
+        width: 450px;
+        height: 290px;
     }
 
-    .dish-detial-2 {
-        width: 21%;
-        margin-left: 0px;
-        margin-right: 25px;
-        display: n;
+    .img-color-div-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .img-color-2 {
+        border-radius: 15px;
+        top: 0;
+    }
+
+    .img-color-div-2 {
+        width: 450px;
+        height: 290px;
     }
 
     .dish-detial-2 h5 {
-        font-size: 14px;
+        margin-left: 5px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .green-star-2 {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 3px;
     }
 
     .detial-hotel-2 p {
-        font-size: 13px;
-        width: 180px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        width: 230px;
+    }
+
+    .rate-2 {
+        bottom: 30px;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .dish-detial-2 {
+        width: 22%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*---------------------------------------------------------------------*/
+    .offer-list {
+        margin-top: -140px;
+    }
+
+    .salem {
+        margin-top: -30px;
+    }
+
+    .img-color-div {
+        width: 240px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    .color-img-div {
+        width: 240px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .img-color {
+        border-radius: 10px;
+    }
+
+    .rate {
+        bottom: 30px;
+        left: 18px;
+        font-size: 20px;
+    }
+
+    .dish-detial {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        gap: 30px;
+    }
+
+    .dish-detial h5 {
+        margin-left: 5px;
+        margin-top: 9px;
+        font-size: 15px;
+    }
+
+    .green-star {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 3px;
+
     }
 
     .radeing {
-        font-size: 13px;
+        position: relative;
+        bottom: 0px;
+        font-size: 14px;
     }
 
-    /*------------------------------------end-------------------------*/
+    .detial-hotel p {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 15px;
+        width: 230px;
+    }
+
+    .main-hotel h4 {
+        position: relative;
+        bottom: 140px;
+    }
+
+    /*-------------------------------------------Top restaurant chains in Salem------------------------------*/
+    .img-list {
+        width: 140px;
+        margin-right: 24px;
+    }
+
+    .main-dish h4 {
+        margin-top: 180px;
+        font-size: 28px;
+    }
+
+    .dish-list {
+        margin: 40px 0px;
+    }
+
+    /*--------------------------------------main end-----------------------*/
+    .head-top {
+        height: 150px;
+    }
+
+    .head-left img {
+        width: 90px;
+        height: 90px;
+        margin: 5px 15px;
+        padding-left: 20px;
+    }
+
+    .head-left p {
+        font-size: 35px;
+        margin-left: 10px;
+        border-bottom: 4px solid;
+    }
+
+    /*-------head lift end------*/
+    .head-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .head-right div {
+        gap: 0px;
+    }
+
+    .head-right-icone svg,
+    .head-icon {
+        left: 0%;
+    }
+
+    .head-icon {
+        font-size: 30px;
+    }
+
+    .head-right-icone svg {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    /*------------------------------head left  end -------------------------------*/
 }
 
-
-
-
-@media (max-width:1024px) {
-    
-    .near-in-line p{
-        font-size: 11px;
-    }
-    /*-----------------------------*/
-    .salem h4{
+@media(max-width:1441px) {
+    .col2 p, .col3 p, .col4 p {
         font-size: 20px;
     }
-    .dish-detial { 
-        gap: 30px;
+
+    .col1 img {
+        width: 60px;
+        margin-right: 5px;
     }
-    .detial-hotel p {
-        font-size: 15px;
-        width: 205px;
+    .col1 {
+      position: relative;
+      top: -180px;
+      margin-right: 10px;
     }
-    .rate {
-        left: 15px;
-        font-size: 19px;
+    .col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+        font-size: 25px;
     }
+    /*--------------------------------------------*/
+    .swiggy p {
+        font-size: 29px;
+    }
+
+    .play-store {
+        position: relative;
+        top: 20px;
+        width: 50%;
+    }
+
+    /*---------------------*/
+    .main-hotel-2 {
+        justify-content: space-between;
+        top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .color-img-div-2 {
+        width: 230px;
+        height: 140px;
+    }
+
+    .img-color-div-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .img-color-2 {
+        border-radius: 10px;
+        top: 0;
+    }
+
+    .img-color-div-2 {
+        width: 230px;
+        height: 140px;
+    }
+
+    .dish-detial-2 h5 {
+        margin-left: 5px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .green-star-2 {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .detial-hotel-2 p {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 18px;
+        width: 230px;
+    }
+
+    .rate-2 {
+        bottom: 30px;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .dish-detial-2 {
+        width: 22%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*---------------------------------------------------------------------*/
+    .salem {
+        margin-top: -30px;
+    }
+
     .img-color-div {
-        width: 220px;
-        height: 140px;
+        width: 250px;
+        height: 150px;
+        border-radius: 5px;
     }
+
     .color-img-div {
-        width: 220px;
-        height: 140px;
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
     }
-    /*-------------------------------------------*/
-    .main-hotel h4 {
+
+    .img-color {
+        border-radius: 10px;
+    }
+
+    .rate {
+        bottom: 30px;
+        left: 18px;
         font-size: 20px;
+    }
+
+    .dish-detial {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        gap: 25px;
+    }
+
+    .dish-detial h5 {
+        margin-left: 5px;
+        margin-top: 9px;
+        font-size: 15px;
+    }
+
+    .green-star {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 3px;
+
+    }
+
+    .radeing {
+        position: relative;
+        bottom: 0px;
+        font-size: 14px;
+    }
+
+    .detial-hotel p {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 15px;
+        width: 230px;
+    }
+
+    .main-hotel h4 {
+        position: relative;
+        bottom: 3px;
+    }
+
+    /*-------------------------------------------Top restaurant chains in Salem------------------------------*/
+    .img-list {
+        width: 143px;
+        margin-right: 20px;
+    }
+
+    .main-dish h4 {
+        margin-top: 80px;
+        font-size: 24px;
+    }
+
+    .dish-list {
+        margin: 20px 0px;
+    }
+
+    /*--------------------------------------main end-----------------------*/
+
+    .head-top {
+        height: 70px;
+    }
+
+    .head-left img {
+        width: 50px;
+        height: 60px;
+        margin: 5px 15px;
+    }
+
+    .head-left p {
+        font-size: 15px;
+        margin-left: 10px;
+        border-bottom: 3px solid;
+    }
+
+    /*-------head lift end------*/
+    .head-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .head-right div {
+        gap: 0px;
+    }
+
+    .head-right-icone svg,
+    .head-icon {
+        left: 0%;
+    }
+
+    .head-icon {
+        font-size: 15px;
+    }
+
+    .head-right-icone svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
+
+    /*------------------------------head left  end -------------------------------*/
+
+}
+
+@media(max-width:1025px) {
+    .col2 p, .col3 p, .col4 p {
+        font-size: 15px;
+    }
+
+    .col1 img {
+        width: 50px;
+        margin-right: 5px;
+    }
+    .col1 {
+      position: relative;
+      top: -125px;
+      margin-right: 10px;
+    }
+    .col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+        font-size: 20px;
+    }
+    /*--------------------------------------------*/
+    .swiggy p {
+        font-size: 20px;
+    }
+
+    .play-store {
+        position: relative;
+        top: 5px;
+        width: 50%;
+    }
+
+    /*---------------------*/
+    #h4-box {
+        margin-top: 130px;
+    }
+
+    .near-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .near-me {
+        width: 21%;
+        height: 20px;
+        border: 1.5px solid rgba(2, 6, 12, 0.1);
+        border-radius: 10px;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+
+    .near-out-line {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .near-out-line p {
+        position: relative;
+        bottom: 14px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    /*------------------------------------------------------------*/
+    .main-hotel-2 {
+        justify-content: space-between;
+        top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .color-img-div-2 {
+        width: 170px;
+        height: 100px;
+    }
+
+    .img-color-div-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .img-color-2 {
+        border-radius: 10px;
+        top: 0;
+    }
+
+    .img-color-div-2 {
+        width: 170px;
+        height: 100px;
+    }
+
+    .dish-detial-2 h5 {
+        margin-left: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .green-star-2 {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 8px;
+        padding: 3px;
+    }
+
+    .radeing-2 {
+        font-size: 15px;
+    }
+
+    .detial-hotel-2 p {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 15px;
+        width: 160px;
+    }
+
+    .rate-2 {
+        bottom: 30px;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .dish-detial-2 {
+        width: 22%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*---------------------------------------------------------------------*/
+    .offer-list {
+        margin-top: -170px;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .offer-items {
+        height: auto;
+        margin-top: 20px;
     }
 
     .offer-items p {
+        margin: 0px 0px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    /*------------------------------------------------------*/
+    .salem {
+        margin-top: -30px;
+    }
+
+    .img-color-div {
+        width: 230px;
+        height: 140px;
+        border-radius: 5px;
+    }
+
+    .color-img-div {
+        width: 230px;
+        height: 140px;
+        border-radius: 10px;
+    }
+
+    .img-color {
+        border-radius: 10px;
+    }
+
+    .rate {
+        bottom: 30px;
+        left: 15px;
+        font-size: 18px;
+    }
+
+    .dish-detial {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        gap: 22px;
+    }
+
+    .dish-detial h5 {
+        margin-left: 5px;
+        margin-top: 9px;
+        font-size: 15px;
+    }
+
+    .green-star {
+        position: relative;
+        bottom: 0px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 3px;
+
+    }
+
+    .radeing {
+        position: relative;
+        bottom: 0px;
+        font-size: 14px;
+    }
+
+    .detial-hotel p {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 15px;
+        width: 230px;
+    }
+
+    .main-hotel h4 {
+        position: relative;
+        bottom: 50px;
+    }
+
+    /*-------------------------------------------Top restaurant chains in Salem------------------------------*/
+    .img-list {
+        width: 125px;
+        margin-right: 15px;
+    }
+
+    .main-dish h4 {
+        margin-top: 70px;
+        font-size: 22px;
+    }
+
+    .dish-list {
+        margin: 15px 0px;
+    }
+
+    /*--------------------------------------main end-----------------------*/
+
+    .head-top {
+        height: 60px;
+    }
+
+    .head-left img {
+        width: 40px;
+        height: 50px;
+        margin: 5px 15px;
+    }
+
+    .head-left p {
+        font-size: 14px;
+        margin-left: 10px;
+        border-bottom: 2px solid;
+    }
+
+    /*-------head lift end------*/
+    .head-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .head-right div {
+        gap: 0px;
+    }
+
+    .head-right-icone svg,
+    .head-icon {
+        left: 0%;
+    }
+
+    .head-icon {
+        font-size: 12px;
+    }
+
+    .head-right-icone svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+    }
+
+    /*------------------------------head left  end -------------------------------*/
+}
+
+@media(max-width:769px) {
+    .col2 p, .col3 p, .col4 p {
         font-size: 10px;
     }
 
-    /*-------------main list dise----------------------*/
-    .img-color-div-2 {
-        width: 165px;
-        height: 105px;
+    .col1 img {
+        width: 30px;
+        margin-right: 5px;
     }
-    .color-img-div-2 {
-        width: 165px;
-        height: 105px;
+    .col1 {
+      position: relative;
+      top: -90px;
+      margin-right: 10px;
     }
-    .rate-2 {
-        bottom: 35px;
-        left: 15px;
-        font-size: 18.5px;
+    .col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+        font-size: 15px;
+    }
+    /*--------------------------------------------*/
+    .swiggy p {
+        font-size: 15px;
     }
 
-    .dish-detial-2 {
+    .play-store {
+        position: relative;
+        top: 5px;
+        width: 50%;
+    }
+
+    /*---------------------*/
+    #h4-box {
+        margin-top: 130px;
+    }
+
+    .near-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .near-me {
         width: 21%;
-        margin-left: 0px;
-        margin-right: 25px;
+        height: 15px;
+        border: 1.5px solid rgba(2, 6, 12, 0.1);
+        border-radius: 10px;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+
+    .near-out-line {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .near-out-line p {
+        position: relative;
+        bottom: 14px;
+        font-size: 7px;
+        font-weight: 500;
+    }
+
+    /*------------------------------------------*/
+    .main-hotel-2 {
+        justify-content: space-between;
+        top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .color-img-div-2 {
+        width: 130px;
+        height: 80px;
+    }
+
+    .img-color-div-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .img-color-2 {
+        border-radius: 10px;
+        top: 0;
+    }
+
+    .img-color-div-2 {
+        width: 130px;
+        height: 80px;
     }
 
     .dish-detial-2 h5 {
-        font-size: 14px;
+        margin-left: 5px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .green-star-2 {
+        position: relative;
+        bottom: 8px;
+        margin-left: 5px;
+        font-size: 4px;
+        padding: 3px;
+    }
+
+    .radeing-2 {
+        font-size: 10px;
     }
 
     .detial-hotel-2 p {
-        font-size: 13px;
-        width: 180px;
+        margin-left: 5px;
+        margin-top: -5px;
+        font-size: 10px;
+        width: 110px;
+    }
+
+    .rate-2 {
+        bottom: 20px;
+        left: 10px;
+        font-size: 10px;
+    }
+
+    .dish-detial-2 {
+        width: 22%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*--------------------------------------------*/
+    .offer-list {
+        margin-top: -170px;
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .offer-items {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .offer-items p {
+        margin: 0px 0px;
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    /*------------------------------------------------------*/
+    .salem {
+        margin-top: -30px;
+    }
+
+    .img-color-div {
+        width: 170px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .color-img-div {
+        width: 170px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .img-color {
+        border-radius: 10px;
+    }
+
+    .rate {
+        bottom: 25px;
+        left: 10px;
+        font-size: 15px;
+    }
+
+    .dish-detial {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        gap: 20px;
+    }
+
+    .dish-detial h5 {
+        margin-left: 5px;
+        margin-top: 9px;
+        font-size: 12px;
+    }
+
+    .green-star {
+        position: relative;
+        bottom: 7px;
+        margin-left: 5px;
+        font-size: 5px;
+        padding: 3px;
+
     }
 
     .radeing {
-        font-size: 13px;
+        position: relative;
+        bottom: 5px;
+        font-size: 10px;
     }
 
-    /*------------------------------------end-------------------------*/
+    .detial-hotel p {
+        margin-left: 5px;
+        margin-top: -5px;
+        font-size: 10px;
+        width: 170px;
+    }
+
+    .main-hotel h4 {
+        position: relative;
+        bottom: 45px;
+    }
+
+    /*-------------------------------------------Top restaurant chains in Salem------------------------------*/
+    .img-list {
+        width: 94px;
+        margin-right: 10px;
+    }
+
+    .main-dish h4 {
+        margin-top: 60px;
+        font-size: 14px;
+    }
+
+    .dish-list {
+        margin: 15px 0px;
+    }
+
+    /*--------------------------------------main end-----------------------*/
+
+    .head-top {
+        height: 50px;
+    }
+
+    .head-left img {
+        width: 30px;
+        height: 40px;
+        margin: 5px 10px;
+    }
+
+    .head-left p {
+        font-size: 12px;
+        border-bottom: 2px solid;
+        margin-left: 10px;
+    }
+
+    /*-------head lift end------*/
+    .head-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .head-right div {
+        gap: 0px;
+    }
+
+    .head-right-icone svg,
+    .head-icon {
+        left: 0%;
+    }
+
+    .head-icon {
+        font-size: 10px;
+    }
+
+    .head-right-icone svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    /*------------------------------head left  end -------------------------------*/
+}
+
+/*-------------------------------------------------*/
+@media(max-width:427px) {
+    .col2 p, .col3 p, .col4 p {
+        font-size: 3px;
+    }
+
+    .col1 img {
+        width: 15px;
+    }
+    .col1 {
+      position: relative;
+      top: -90px;
+      margin-right: 20px;
+    }
+    .col1 span, .col2 span, .col3 span, .col3 h5, .col4 span{
+        font-size: 8px;
+    }
+    /*--------------------------------------------*/
+    .swiggy p {
+        font-size: 7px;
+        position: relative;
+        bottom: 6=0px;
+    }
+    .play-store {
+        position: relative;
+        top: 5px;
+        width: 50%;
+    }
+    /*---------------------*/
+    .in-box p {
+        font-size: 7px;
+    }
+    #h4-box {
+        margin-top: 160px;
+    }
+
+    .near-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .near-me {
+        width: 21%;
+        height: 10px;
+        border: 1.5px solid rgba(2, 6, 12, 0.1);
+        border-radius: 10px;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+
+    .near-out-line {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .near-out-line p {
+        position: relative;
+        bottom: 13px;
+        font-size: 3px;
+        font-weight: 500;
+    }
+
+    /*------------------------------------------*/
+    .main-hotel-2 {
+        justify-content: space-between;
+        top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .color-img-div-2 {
+        width: 50px;
+        height: 30px;
+    }
+
+    .img-color-div-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .img-color-2 {
+        border-radius: 5px;
+        top: 0;
+    }
+
+    .img-color-div-2 {
+        width: 50px;
+        height: 30px;
+
+    }
+
+    .dish-detial-2 h5 {
+        margin-left: 1px;
+        font-size: 4px;
+        margin-top: 5px;
+    }
+
+    .green-star-2 {
+        position: relative;
+        bottom: 10px;
+        margin-left: 0px;
+        font-size: 3px;
+        padding: 1px;
+    }
+
+    .radeing-2 {
+        font-size: 5px;
+    }
+
+    .detial-hotel-2 p {
+        margin-left: 1px;
+        margin-top: -10px;
+        margin-bottom: 0%;
+        font-size: 5px;
+        width: 50px;
+    }
+
+    .rate-2 {
+        bottom: px;
+        left: 4px;
+        margin-top: 10px;
+        font-size: 4px;
+    }
+
+    .dish-detial-2 {
+        width: 22%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /*--------------------------------------------*/
+
+    .offer-list {
+        margin-top: -160px;
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .offer-items {
+        height: 12px;
+        margin-top: 20px;
+    }
+
+    .offer-items p {
+        margin: 0px 0px;
+        padding: 3px;
+    }
+
+    /*------------------------------------------------------*/
+
+    .salem {
+        margin-top: -30px;
+    }
+
+    .img-color-div {
+        width: 70px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .color-img-div {
+        width: 70px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .img-color {
+        border-radius: 5px;
+    }
+
+    .rate {
+        bottom: 10px;
+        left: 5px;
+        font-size: 5px;
+    }
+
+    .dish-detial {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        gap: 8px;
+    }
+
+    .dish-detial h5 {
+        margin-left: 3px;
+        margin-top: 5px;
+        font-size: 5px;
+    }
+
+    .green-star {
+        position: relative;
+        bottom: 10px;
+        margin-left: 1px;
+        font-size: 1px;
+        padding: 3px;
+        margin-top: 0px;
+    }
+
+    .radeing {
+        position: relative;
+        bottom: 10px;
+        font-size: 4px;
+    }
+
+    .detial-hotel p {
+        margin-left: 1px;
+        margin-top: -10px;
+        font-size: 5px;
+        width: 70px;
+    }
+
+    .main-hotel h4 {
+        position: relative;
+        bottom: 25px;
+    }
+
+    /*-------------------------------------------Top restaurant chains in Salem------------------------------*/
+    .img-list {
+        width: 37.5px;
+        margin-right: 5px;
+    }
+
+    .main-dish h4 {
+        font-weight: 800;
+        margin-top: 40px;
+        font-size: 7px;
+    }
+
+    .dish-list {
+        margin: 10px 0px;
+    }
+
+    /*--------------------------------------main end-----------------------*/
+
+    .head-top {
+        height: 30px;
+    }
+
+    .head-left img {
+        width: 50px;
+        height: 20px;
+        margin: 5px 5px;
+    }
+
+    .head-left p {
+        font-size: 10px;
+        border-bottom: 1.5px solid;
+
+    }
+
+    /*-------head lift end------*/
+    .head-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .head-right div {
+        gap: 0px;
+    }
+
+    .head-right-icone svg,
+    .head-icon {
+        left: 0%;
+    }
+
+    .head-icon {
+        font-size: 5px;
+    }
+
+    .head-right-icone svg {
+        width: 10px;
+        height: 10px;
+        margin-right: 2px;
+    }
+
+    /*------------------------------head left  end -------------------------------*/
+
 }
